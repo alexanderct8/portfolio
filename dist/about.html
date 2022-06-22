@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+<script defer src="bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+<body>
+<style>
+    :root {
+    --primary:#0A192F;
+    --terteary:#FFECD1;
+    --texto2:#F9F9F9;;
+    --font1:'IBM Plex Serif', serif;
+    --font2:'Alegreya Sans', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--primary);
+}
+#particles-js {
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    z-index: -1;
+}
+.return {
+    margin: 12px 0 0 16px;
+}
+.return-link{
+    font-size: 3rem;
+    color: var(--terteary);
+}
+.hero{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr minmax(250px, 2fr);
+    place-items: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+.hero-about{
+    align-self: flex-start;
+}
+.hero-about h2{
+    font-family: var(--font1);
+    font-size: 3rem;
+    color: var(--terteary);
+}
+.hero-about p{
+    font-family: var(--font2);
+    font-size: 2.2rem;
+    color: var(--texto2);
+}
+.images{
+    margin: 0;
+}
+.images img{
+    height: 300px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 375px){
+    .return-link{
+        font-size: 2.5rem;
+    }
+    .hero {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .return {
+        margin-left: 4px;
+    }
+    .hero {
+        width: 70%;
+       display: flex;
+       flex-direction: column
+    }
+    .hero-about h2 {
+        margin-top: 0;
+    }
+    .hero-about p {
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .hero {
+        width: 80%;
+    }
+}
+</style>
+    <nav class="return">
+        <a class="return-link" href="./index.html"><i class="fas fa-arrow-left"></i></a>
+    </nav>
+    <section class="hero">
+        <div class="hero-about">
+            <h2>Sobre mí</h2>
+            <p>Egresado de la carrera de gastronomía, ejerciendo durante diez  años, por lo  que cuento con experiencia en destintas áreas de la restauración.</p>
+            <p>EL constante aprendisaje y mejora, es la única manera de alcanzar un  crecemiento personal y profesional.</p>
+            <P>En mis tiempo libres me gusta hacer ejercicios al aire libre, viajar, jugar futbol, cocinar, pasear, jugar mortal combat.</P>
+        </div>
+        <figure class="images">
+            <img src="images/b492a4a4fe94a856457c.JPG" alt="foto de perfil">
+        </figure>
+    </section>
+    <div id="particles-js"></div>
+    <script src="https://kit.fontawesome.com/c1c5ec1101.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="images/8311cfd0fb7997f6acff.js"></script>
+</body>
+</html>
